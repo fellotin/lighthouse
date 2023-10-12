@@ -139,7 +139,7 @@ We expect this release to ship in the DevTools of [Chrome 103](https://chromiumd
 
 ## New Audits
 
-* The new performance metric [Interaction to Next Paint (INP)](https://web.dev/articles/inp) assesses responsiveness by measuring the latency of interactions throughout the page lifecycle. INP can be measured using Lighthouse timespan mode accessible through [user flows](https://github.com/GoogleChrome/lighthouse/blob/master/docs/user-flows.md) or the [new DevTools panel](https://developer.chrome.com/blog/new-in-devtools-101/#lighthouse). ([#13917](https://github.com/GoogleChrome/lighthouse/pull/13917), [#13917](https://github.com/GoogleChrome/lighthouse/pull/13982)
+* The new performance metric [Interaction to Next Paint (INP)](https://web.dev/inp/) assesses responsiveness by measuring the latency of interactions throughout the page lifecycle. INP can be measured using Lighthouse timespan mode accessible through [user flows](https://github.com/GoogleChrome/lighthouse/blob/master/docs/user-flows.md) or the [new DevTools panel](https://developer.chrome.com/blog/new-in-devtools-101/#lighthouse). ([#13917](https://github.com/GoogleChrome/lighthouse/pull/13917), [#13917](https://github.com/GoogleChrome/lighthouse/pull/13982)
 
 ## Core
 
@@ -502,7 +502,7 @@ Thanks to our new contributors 👽🐷🐰🐯🐻!
 
 <img src="https://user-images.githubusercontent.com/6752989/141487869-614428a5-d475-4cce-b95a-48803e939c66.png" alt="Report of a Lighthouse User Flow. Shows the overivew page, with summaries of 4 subreports." width="800px">
 
-Lighthouse now offers auditing user flows, scripted with Puppeteer, via the Node CLI. This means you can now audit a page beyond its initial load. See [the Lighthouse user flows blog post](https://web.dev/articles/lighthouse-user-flows) for more.
+Lighthouse now offers auditing user flows, scripted with Puppeteer, via the Node CLI. This means you can now audit a page beyond its initial load. See [the Lighthouse user flows blog post](https://web.dev/lighthouse-user-flows/) for more.
 
 ## Core
 
@@ -808,7 +808,7 @@ Thanks to our new contributors 👽🐷🐰🐯🐻!
 
 ## New Audits
 
-* Detect when the LCP element is lazy-loaded. Above-the-fold images that are lazily loaded render later in the page lifecycle, which can delay the largest contentful paint. [Learn more](https://web.dev/articles/lcp-lazy-loading) ([#12838](https://github.com/GoogleChrome/lighthouse/pull/12838))
+* Detect when the LCP element is lazy-loaded. Above-the-fold images that are lazily loaded render later in the page lifecycle, which can delay the largest contentful paint. [Learn more](https://web.dev/lcp-lazy-loading/) ([#12838](https://github.com/GoogleChrome/lighthouse/pull/12838))
 
 ## Core
 
@@ -2301,13 +2301,13 @@ We expect this release to ship in the DevTools of Chrome 84.
 
 ## Notable changes
 
-So many! See the [**Lighthouse 6.0: What's New** blog post](https://web.dev/articles/lighthouse-whats-new-6.0) for an in-depth look.
+So many! See the [**Lighthouse 6.0: What's New** blog post](https://web.dev/lighthouse-whats-new-6.0/) for an in-depth look.
 
 ## 🆕 New audits
 
 * [Largest Contentful Paint](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/) (LCP) is a new metric that measures the time from navigation until the largest content element in the viewport is rendered ([#9905](https://github.com/GoogleChrome/lighthouse/pull/9905), [#10213](https://github.com/GoogleChrome/lighthouse/pull/10213), [#10452](https://github.com/GoogleChrome/lighthouse/pull/10452), [#10529](https://github.com/GoogleChrome/lighthouse/pull/10529)).
    - `largest-contentful-paint-element` is a companion audit that gives information about which element triggered the LCP ([#10517](https://github.com/GoogleChrome/lighthouse/pull/10517), [#10713](https://github.com/GoogleChrome/lighthouse/pull/10713)).
-* [Cumulative Layout Shift](https://web.dev/articles/cls) (CLS) is a new metric that measures the amount of unexpected movement of content as a page loads ([#9037](https://github.com/GoogleChrome/lighthouse/pull/9037), [#10427](https://github.com/GoogleChrome/lighthouse/pull/10427), [#10495](https://github.com/GoogleChrome/lighthouse/pull/10495), [#10570](https://github.com/GoogleChrome/lighthouse/pull/10570), [#10728](https://github.com/GoogleChrome/lighthouse/pull/10728)).
+* [Cumulative Layout Shift](https://web.dev/cls/) (CLS) is a new metric that measures the amount of unexpected movement of content as a page loads ([#9037](https://github.com/GoogleChrome/lighthouse/pull/9037), [#10427](https://github.com/GoogleChrome/lighthouse/pull/10427), [#10495](https://github.com/GoogleChrome/lighthouse/pull/10495), [#10570](https://github.com/GoogleChrome/lighthouse/pull/10570), [#10728](https://github.com/GoogleChrome/lighthouse/pull/10728)).
    - `layout-shift-elements` is another companion diagnostic that gives information about the elements that shifted as the page loaded ([#10702](https://github.com/GoogleChrome/lighthouse/pull/10702)).
 * `unused-javascript` is an audit that has been kicking around for some time but is only now turned on by default. It accounts for what JavaScript was loaded but never executed during page load and estimates the load time that could be saved via code splitting, dead code elimination, or judicious use of the delete key ([#9854](https://github.com/GoogleChrome/lighthouse/pull/9854)).
 * A PWA [`maskable-icon`](https://developer.chrome.com/docs/lighthouse/pwa/maskable-icon-audit/) just looks better on your homescreen, so this new audit encourages you to have at least one available in your manifest ([#10370](https://github.com/GoogleChrome/lighthouse/pull/10370)).
@@ -2636,7 +2636,7 @@ Thanks to @dpacassi, @lirantal and @yeonjuan for their first contributions!
 # 5.5.0 (2019-10-02)
 
 ## Notable changes
-* Preliminary implementation of the [Largest Contentful Paint](https://web.dev/articles/lcp) metric has landed (`devtools` and `provided` throttling only) and can be found in the hidden `metrics` audit in the raw LHR JSON ([#9706](https://github.com/googlechrome/lighthouse/pull/9706))
+* Preliminary implementation of the [Largest Contentful Paint](https://web.dev/lcp/) metric has landed (`devtools` and `provided` throttling only) and can be found in the hidden `metrics` audit in the raw LHR JSON ([#9706](https://github.com/googlechrome/lighthouse/pull/9706))
 * The creation of main-thread tasks from a trace is now more robust. This should significantly reduce the occurrence of Issue [#7764](https://github.com/GoogleChrome/lighthouse/issues/7764), `"Fatal trace logic error - expected start event, got X"` ([#9491](https://github.com/googlechrome/lighthouse/pull/9491))
 * `<script>` element `id` has been added to the `ScriptElements` artifact ([#9718](https://github.com/googlechrome/lighthouse/pull/9718))
 
