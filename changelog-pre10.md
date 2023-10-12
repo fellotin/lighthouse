@@ -139,7 +139,7 @@ We expect this release to ship in the DevTools of [Chrome 103](https://chromiumd
 
 ## New Audits
 
-* The new performance metric [Interaction to Next Paint (INP)](https://web.dev/inp/) assesses responsiveness by measuring the latency of interactions throughout the page lifecycle. INP can be measured using Lighthouse timespan mode accessible through [user flows](https://github.com/GoogleChrome/lighthouse/blob/master/docs/user-flows.md) or the [new DevTools panel](https://developer.chrome.com/blog/new-in-devtools-101/#lighthouse). ([#13917](https://github.com/GoogleChrome/lighthouse/pull/13917), [#13917](https://github.com/GoogleChrome/lighthouse/pull/13982)
+* The new performance metric [Interaction to Next Paint (INP)](https://web.dev/articles/inp) assesses responsiveness by measuring the latency of interactions throughout the page lifecycle. INP can be measured using Lighthouse timespan mode accessible through [user flows](https://github.com/GoogleChrome/lighthouse/blob/master/docs/user-flows.md) or the [new DevTools panel](https://developer.chrome.com/blog/new-in-devtools-101/#lighthouse). ([#13917](https://github.com/GoogleChrome/lighthouse/pull/13917), [#13917](https://github.com/GoogleChrome/lighthouse/pull/13982)
 
 ## Core
 
@@ -502,7 +502,7 @@ Thanks to our new contributors 👽🐷🐰🐯🐻!
 
 <img src="https://user-images.githubusercontent.com/6752989/141487869-614428a5-d475-4cce-b95a-48803e939c66.png" alt="Report of a Lighthouse User Flow. Shows the overivew page, with summaries of 4 subreports." width="800px">
 
-Lighthouse now offers auditing user flows, scripted with Puppeteer, via the Node CLI. This means you can now audit a page beyond its initial load. See [the Lighthouse user flows blog post](https://web.dev/lighthouse-user-flows/) for more.
+Lighthouse now offers auditing user flows, scripted with Puppeteer, via the Node CLI. This means you can now audit a page beyond its initial load. See [the Lighthouse user flows blog post](https://web.dev/articles/lighthouse-user-flows) for more.
 
 ## Core
 
@@ -808,7 +808,7 @@ Thanks to our new contributors 👽🐷🐰🐯🐻!
 
 ## New Audits
 
-* Detect when the LCP element is lazy-loaded. Above-the-fold images that are lazily loaded render later in the page lifecycle, which can delay the largest contentful paint. [Learn more](https://web.dev/lcp-lazy-loading/) ([#12838](https://github.com/GoogleChrome/lighthouse/pull/12838))
+* Detect when the LCP element is lazy-loaded. Above-the-fold images that are lazily loaded render later in the page lifecycle, which can delay the largest contentful paint. [Learn more](https://web.dev/articles/lcp-lazy-loading) ([#12838](https://github.com/GoogleChrome/lighthouse/pull/12838))
 
 ## Core
 
@@ -2301,20 +2301,20 @@ We expect this release to ship in the DevTools of Chrome 84.
 
 ## Notable changes
 
-So many! See the [**Lighthouse 6.0: What's New** blog post](https://web.dev/lighthouse-whats-new-6.0/) for an in-depth look.
+So many! See the [**Lighthouse 6.0: What's New** blog post](https://web.dev/articles/lighthouse-whats-new-6.0) for an in-depth look.
 
 ## 🆕 New audits
 
-* [Largest Contentful Paint](https://web.dev/lighthouse-largest-contentful-paint/) (LCP) is a new metric that measures the time from navigation until the largest content element in the viewport is rendered ([#9905](https://github.com/GoogleChrome/lighthouse/pull/9905), [#10213](https://github.com/GoogleChrome/lighthouse/pull/10213), [#10452](https://github.com/GoogleChrome/lighthouse/pull/10452), [#10529](https://github.com/GoogleChrome/lighthouse/pull/10529)).
+* [Largest Contentful Paint](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/) (LCP) is a new metric that measures the time from navigation until the largest content element in the viewport is rendered ([#9905](https://github.com/GoogleChrome/lighthouse/pull/9905), [#10213](https://github.com/GoogleChrome/lighthouse/pull/10213), [#10452](https://github.com/GoogleChrome/lighthouse/pull/10452), [#10529](https://github.com/GoogleChrome/lighthouse/pull/10529)).
    - `largest-contentful-paint-element` is a companion audit that gives information about which element triggered the LCP ([#10517](https://github.com/GoogleChrome/lighthouse/pull/10517), [#10713](https://github.com/GoogleChrome/lighthouse/pull/10713)).
-* [Cumulative Layout Shift](https://web.dev/cls/) (CLS) is a new metric that measures the amount of unexpected movement of content as a page loads ([#9037](https://github.com/GoogleChrome/lighthouse/pull/9037), [#10427](https://github.com/GoogleChrome/lighthouse/pull/10427), [#10495](https://github.com/GoogleChrome/lighthouse/pull/10495), [#10570](https://github.com/GoogleChrome/lighthouse/pull/10570), [#10728](https://github.com/GoogleChrome/lighthouse/pull/10728)).
+* [Cumulative Layout Shift](https://web.dev/articles/cls) (CLS) is a new metric that measures the amount of unexpected movement of content as a page loads ([#9037](https://github.com/GoogleChrome/lighthouse/pull/9037), [#10427](https://github.com/GoogleChrome/lighthouse/pull/10427), [#10495](https://github.com/GoogleChrome/lighthouse/pull/10495), [#10570](https://github.com/GoogleChrome/lighthouse/pull/10570), [#10728](https://github.com/GoogleChrome/lighthouse/pull/10728)).
    - `layout-shift-elements` is another companion diagnostic that gives information about the elements that shifted as the page loaded ([#10702](https://github.com/GoogleChrome/lighthouse/pull/10702)).
 * `unused-javascript` is an audit that has been kicking around for some time but is only now turned on by default. It accounts for what JavaScript was loaded but never executed during page load and estimates the load time that could be saved via code splitting, dead code elimination, or judicious use of the delete key ([#9854](https://github.com/GoogleChrome/lighthouse/pull/9854)).
-* A PWA [`maskable-icon`](https://web.dev/maskable-icon-audit/) just looks better on your homescreen, so this new audit encourages you to have at least one available in your manifest ([#10370](https://github.com/GoogleChrome/lighthouse/pull/10370)).
+* A PWA [`maskable-icon`](https://developer.chrome.com/docs/lighthouse/pwa/maskable-icon-audit/) just looks better on your homescreen, so this new audit encourages you to have at least one available in your manifest ([#10370](https://github.com/GoogleChrome/lighthouse/pull/10370)).
 * `timing-budget` expands [budget assertions](https://github.com/GoogleChrome/lighthouse/blob/7e4fa55/docs/performance-budgets.md) to now be settable on all the performance metrics ([#9901](https://github.com/GoogleChrome/lighthouse/pull/9901), [#9925](https://github.com/GoogleChrome/lighthouse/pull/9925)).
-* The new [`charset`](https://web.dev/charset) audit ensures a proper character encoding for page content ([#10284](https://github.com/GoogleChrome/lighthouse/pull/10284), [#10389](https://github.com/GoogleChrome/lighthouse/pull/10389), [#10689](https://github.com/GoogleChrome/lighthouse/pull/10689)).
+* The new [`charset`](https://developer.chrome.com/docs/lighthouse/best-practices/charset/) audit ensures a proper character encoding for page content ([#10284](https://github.com/GoogleChrome/lighthouse/pull/10284), [#10389](https://github.com/GoogleChrome/lighthouse/pull/10389), [#10689](https://github.com/GoogleChrome/lighthouse/pull/10689)).
 * `image-size-responsive` checks that images have an aspect ratio and resolution that match well with how they are displayed on a page ([#10460](https://github.com/GoogleChrome/lighthouse/pull/10460)).
-* Updating to the latest version of `axe-core` has unlocked a number of new accessibility audits: [`aria-hidden-body`](https://web.dev/aria-hidden-body/), [`aria-hidden-focus`](https://web.dev/aria-hidden-focus/), [`aria-input-field-name`](https://web.dev/aria-input-field-name/), [`aria-toggle-field-name`](https://web.dev/aria-toggle-field-name/), [`duplicate-id-active`](https://web.dev/duplicate-id-active/), [`duplicate-id-aria`](https://web.dev/duplicate-id-aria/), [`form-field-multiple-labels`](https://web.dev/form-field-multiple-labels/), [`heading-order`](https://web.dev/heading-order/) ([#9798](https://github.com/GoogleChrome/lighthouse/pull/9798)).
+* Updating to the latest version of `axe-core` has unlocked a number of new accessibility audits: [`aria-hidden-body`](https://dequeuniversity.com/rules/axe/4.4/aria-hidden-body), [`aria-hidden-focus`](https://dequeuniversity.com/rules/axe/4.4/aria-hidden-focus), [`aria-input-field-name`](https://dequeuniversity.com/rules/axe/4.4/aria-input-field-name), [`aria-toggle-field-name`](https://dequeuniversity.com/rules/axe/4.4/aria-toggle-field-name), [`duplicate-id-active`](https://dequeuniversity.com/rules/axe/4.4/duplicate-id-active), [`duplicate-id-aria`](https://dequeuniversity.com/rules/axe/4.4/duplicate-id-aria), [`form-field-multiple-labels`](https://dequeuniversity.com/rules/axe/4.4/form-field-multiple-labels), [`heading-order`](https://dequeuniversity.com/rules/axe/4.4/heading-order) ([#9798](https://github.com/GoogleChrome/lighthouse/pull/9798)).
 
 ## ⚗️ Experimental audits
 
@@ -2330,7 +2330,7 @@ Thanks to @TGiles, @roelfjan, @chruxin, @warrengm, @alexgreencode, @mikedijkstra
 
 ## 💥 Breaking changes
 
-* Performance metric scores [have been reweighted](https://web.dev/performance-scoring/) to better reflect a user's loading experience ([#9949](https://github.com/GoogleChrome/lighthouse/pull/9949)).
+* Performance metric scores [have been reweighted](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/) to better reflect a user's loading experience ([#9949](https://github.com/GoogleChrome/lighthouse/pull/9949)).
 * Metric score curves have been updated when running a desktop Lighthouse test to account for the faster connection and CPU ([#9911](https://github.com/GoogleChrome/lighthouse/pull/9911), [#10756](https://github.com/GoogleChrome/lighthouse/pull/10756)).
 * `frameNavigated` events are now used to track redirects, which means JS redirects are now accounted for when determining the run's `finalUrl` ([#10339](https://github.com/GoogleChrome/lighthouse/pull/10339)).
 * The emulated mobile device has moved from the Nexus 5x to the Moto G4 (but the existing DPR has been left unchanged) ([#10191](https://github.com/GoogleChrome/lighthouse/pull/10191), [#10749](https://github.com/GoogleChrome/lighthouse/pull/10749)).
@@ -2636,7 +2636,7 @@ Thanks to @dpacassi, @lirantal and @yeonjuan for their first contributions!
 # 5.5.0 (2019-10-02)
 
 ## Notable changes
-* Preliminary implementation of the [Largest Contentful Paint](https://web.dev/largest-contentful-paint) metric has landed (`devtools` and `provided` throttling only) and can be found in the hidden `metrics` audit in the raw LHR JSON ([#9706](https://github.com/googlechrome/lighthouse/pull/9706))
+* Preliminary implementation of the [Largest Contentful Paint](https://web.dev/articles/lcp) metric has landed (`devtools` and `provided` throttling only) and can be found in the hidden `metrics` audit in the raw LHR JSON ([#9706](https://github.com/googlechrome/lighthouse/pull/9706))
 * The creation of main-thread tasks from a trace is now more robust. This should significantly reduce the occurrence of Issue [#7764](https://github.com/GoogleChrome/lighthouse/issues/7764), `"Fatal trace logic error - expected start event, got X"` ([#9491](https://github.com/googlechrome/lighthouse/pull/9491))
 * `<script>` element `id` has been added to the `ScriptElements` artifact ([#9718](https://github.com/googlechrome/lighthouse/pull/9718))
 
