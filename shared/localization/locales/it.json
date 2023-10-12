@@ -639,7 +639,7 @@
     "message": "Usa formati video per i contenuti animati"
   },
   "core/audits/byte-efficiency/legacy-javascript.js | description": {
-    "message": "Polyfill e trasformazioni consentono ai browser precedenti di usare nuove funzionalità JavaScript. Tanti non sono però necessari per i browser moderni. Per il tuo codice JavaScript in bundle, adotta una moderna strategia di implementazione degli script usando il rilevamento di funzionalità module/nomodule per ridurre la quantità di codice inviata ai browser moderni e mantenere il supporto dei browser precedenti. [Scopri come utilizzare il moderno codice JavaScript](https://web.dev/articles/publish-modern-javascript)"
+    "message": "Polyfill e trasformazioni consentono ai browser precedenti di usare nuove funzionalità JavaScript. Tanti non sono però necessari per i browser moderni. Per il tuo codice JavaScript in bundle, adotta una moderna strategia di implementazione degli script usando il rilevamento di funzionalità module/nomodule per ridurre la quantità di codice inviata ai browser moderni e mantenere il supporto dei browser precedenti. [Scopri come utilizzare il moderno codice JavaScript](https://web.dev/publish-modern-javascript/)"
   },
   "core/audits/byte-efficiency/legacy-javascript.js | title": {
     "message": "Evita di pubblicare codice JavaScript precedente in browser moderni"
@@ -993,7 +993,7 @@
     "message": "Dimensioni previste"
   },
   "core/audits/image-size-responsive.js | description": {
-    "message": "Le dimensioni naturali delle immagini dovrebbero essere proporzionali a quelle dello schermo e al rapporto pixel per ottimizzare la nitidezza delle immagini. [Scopri come fornire immagini adattabili](https://web.dev/articles/serve-responsive-images)."
+    "message": "Le dimensioni naturali delle immagini dovrebbero essere proporzionali a quelle dello schermo e al rapporto pixel per ottimizzare la nitidezza delle immagini. [Scopri come fornire immagini adattabili](https://web.dev/serve-responsive-images/)."
   },
   "core/audits/image-size-responsive.js | failureTitle": {
     "message": "Vengono pubblicate immagini a bassa risoluzione"
@@ -1158,13 +1158,13 @@
     "message": "Contributo a CLS"
   },
   "core/audits/layout-shift-elements.js | description": {
-    "message": "Questi elementi DOM contribuiscono maggiormente alla metrica CLS della pagina. [Scopri come migliorare il CLS](https://web.dev/articles/optimize-cls)"
+    "message": "Questi elementi DOM contribuiscono maggiormente alla metrica CLS della pagina. [Scopri come migliorare il CLS](https://web.dev/optimize-cls/)"
   },
   "core/audits/layout-shift-elements.js | title": {
     "message": "Evita significative variazioni di layout"
   },
   "core/audits/lcp-lazy-loaded.js | description": {
-    "message": "Le immagini above the fold che vengono caricate tramite caricamento lento vengono visualizzate più tardi nel ciclo di vita della pagina e questo può ritardare la visualizzazione dell'elemento più grande. [Scopri di più sul caricamento lento ottimale](https://web.dev/articles/lcp-lazy-loading)."
+    "message": "Le immagini above the fold che vengono caricate tramite caricamento lento vengono visualizzate più tardi nel ciclo di vita della pagina e questo può ritardare la visualizzazione dell'elemento più grande. [Scopri di più sul caricamento lento ottimale](https://web.dev/lcp-lazy-loading/)."
   },
   "core/audits/lcp-lazy-loaded.js | failureTitle": {
     "message": "L'immagine Largest Contentful Paint è stata caricata tramite caricamento lento"
@@ -1173,7 +1173,7 @@
     "message": "L'immagine Largest Contentful Paint non è stata caricata tramite caricamento lento"
   },
   "core/audits/long-tasks.js | description": {
-    "message": "Elenca le attività più lunghe nel thread principale; è utile per identificare gli elementi che contribuiscono maggiormente al ritardo dell'input. [Scopri come evitare attività lunghe nel thread principale](https://web.dev/articles/long-tasks-devtools)"
+    "message": "Elenca le attività più lunghe nel thread principale; è utile per identificare gli elementi che contribuiscono maggiormente al ritardo dell'input. [Scopri come evitare attività lunghe nel thread principale](https://web.dev/long-tasks-devtools/)"
   },
   "core/audits/long-tasks.js | displayValue": {
     "message": "{itemCount,plural, =1{# attività lunga trovata}other{# attività lunghe trovate}}"
@@ -1221,7 +1221,7 @@
     "message": "Il file manifest contiene un'icona mascherabile"
   },
   "core/audits/metrics/cumulative-layout-shift.js | description": {
-    "message": "La metrica Cumulative Layout Shift misura lo spostamento degli elementi visibili all'interno dell'area visibile. [Scopri di più sulla metrica Cumulative Layout Shift](https://web.dev/articles/cls)."
+    "message": "La metrica Cumulative Layout Shift misura lo spostamento degli elementi visibili all'interno dell'area visibile. [Scopri di più sulla metrica Cumulative Layout Shift](https://web.dev/cls/)."
   },
   "core/audits/metrics/first-contentful-paint.js | description": {
     "message": "First Contentful Paint indica il momento in cui vengono visualizzati il primo testo o la prima immagine. [Scopri di più sulla metrica First Contentful Paint](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/)."
@@ -1230,7 +1230,7 @@
     "message": "La metrica First Meaningful Paint indica quando diventano visibili i contenuti principali di una pagina. [Scopri di più sulla metrica First Meaningful Paint](https://developer.chrome.com/docs/lighthouse/performance/first-meaningful-paint/)."
   },
   "core/audits/metrics/interaction-to-next-paint.js | description": {
-    "message": "L'interazione con Next Paint misura l'adattabilità della pagina, il tempo necessario alla pagina per rispondere in modo visibile all'input utente. [Scopri di più sulla metrica Interaction to Next Paint](https://web.dev/articles/inp)."
+    "message": "L'interazione con Next Paint misura l'adattabilità della pagina, il tempo necessario alla pagina per rispondere in modo visibile all'input utente. [Scopri di più sulla metrica Interaction to Next Paint](https://web.dev/inp/)."
   },
   "core/audits/metrics/interactive.js | description": {
     "message": "Tempo all'interattività indica il tempo necessario affinché la pagina diventi completamente interattiva. [Scopri di più sulla metrica Tempo all'interattività](https://developer.chrome.com/docs/lighthouse/performance/interactive/)."
@@ -1260,7 +1260,7 @@
     "message": "Latenze server backend"
   },
   "core/audits/no-unload-listeners.js | description": {
-    "message": "L'evento `unload` non viene attivato in modo affidabile e il relativo ascolto potrebbe impedire ottimizzazioni del browser quali cache back-forward. Utilizza invece gli eventi `pagehide` o `visibilitychange`. [Scopri di più sull'unload dei listener di eventi](https://web.dev/articles/bfcache#never_use_the_unload_event)"
+    "message": "L'evento `unload` non viene attivato in modo affidabile e il relativo ascolto potrebbe impedire ottimizzazioni del browser quali cache back-forward. Utilizza invece gli eventi `pagehide` o `visibilitychange`. [Scopri di più sull'unload dei listener di eventi](https://web.dev/bfcache/#never-use-the-unload-event)"
   },
   "core/audits/no-unload-listeners.js | failureTitle": {
     "message": "Registra un listener `unload`"
@@ -1305,7 +1305,7 @@
     "message": "Budget per le prestazioni"
   },
   "core/audits/preload-fonts.js | description": {
-    "message": "Precarica caratteri `optional` per consentirne l'utilizzo ai visitatori alla prima visita. [Scopri di più sul precaricamento dei caratteri](https://web.dev/articles/preload-optional-fonts)"
+    "message": "Precarica caratteri `optional` per consentirne l'utilizzo ai visitatori alla prima visita. [Scopri di più sul precaricamento dei caratteri](https://web.dev/preload-optional-fonts/)"
   },
   "core/audits/preload-fonts.js | failureTitle": {
     "message": "I caratteri con `font-display: optional` non vengono precaricati"
@@ -1314,7 +1314,7 @@
     "message": "I caratteri con `font-display: optional` vengono precaricati"
   },
   "core/audits/prioritize-lcp-image.js | description": {
-    "message": "Se l'elemento LCP viene aggiunto alla pagina in modo dinamico, dovresti precaricare l'immagine per migliorarlo. [Scopri di più sul precaricamento degli elementi LCP](https://web.dev/articles/optimize-lcp#optimize_when_the_resource_is_discovered)."
+    "message": "Se l'elemento LCP viene aggiunto alla pagina in modo dinamico, dovresti precaricare l'immagine per migliorarlo. [Scopri di più sul precaricamento degli elementi LCP](https://web.dev/optimize-lcp/#optimize-when-the-resource-is-discovered)."
   },
   "core/audits/prioritize-lcp-image.js | title": {
     "message": "Precarica l'immagine Largest Contentful Paint"
@@ -1587,7 +1587,7 @@
     "message": "Budget per le tempistiche"
   },
   "core/audits/unsized-images.js | description": {
-    "message": "Imposta larghezza e altezza esplicite negli elementi immagine per ridurre le variazioni di layout e migliorare la metrica CLS. [Scopri come impostare le dimensioni delle immagini](https://web.dev/articles/optimize-cls#images_without_dimensions)"
+    "message": "Imposta larghezza e altezza esplicite negli elementi immagine per ridurre le variazioni di layout e migliorare la metrica CLS. [Scopri come impostare le dimensioni delle immagini](https://web.dev/optimize-cls/#images-without-dimensions)"
   },
   "core/audits/unsized-images.js | failureTitle": {
     "message": "Gli elementi immagine non hanno `width` e `height` esplicite"
@@ -1662,7 +1662,7 @@
     "message": "Ha un tag `<meta name=\"viewport\">` con `width` o `initial-scale`"
   },
   "core/audits/work-during-interaction.js | description": {
-    "message": "Si tratta del lavoro di blocco dei thread che si verifica durante la misurazione di Interaction to Next Paint. [Scopri di più sulla metrica Interaction to Next Paint](https://web.dev/articles/inp)."
+    "message": "Si tratta del lavoro di blocco dei thread che si verifica durante la misurazione di Interaction to Next Paint. [Scopri di più sulla metrica Interaction to Next Paint](https://web.dev/inp/)."
   },
   "core/audits/work-during-interaction.js | displayValue": {
     "message": "{timeInMs, number, milliseconds} ms utilizzati per l'evento \"{interactionType}\""
@@ -1704,10 +1704,10 @@
     "message": "Best practice"
   },
   "core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Questi controlli mettono in evidenza le opportunità per [migliorare l'accessibilità della tua app web](https://developer.chrome.com/docs/lighthouse/accessibility/). Il rilevamento automatico è in grado di rilevare soltanto un sottoinsieme di problemi e non garantisce l'accessibilità della tua app web, pertanto sono consigliati anche i [test manuali](https://web.dev/articles/how-to-review)."
+    "message": "Questi controlli mettono in evidenza le opportunità per [migliorare l'accessibilità della tua app web](https://developer.chrome.com/docs/lighthouse/accessibility/). Il rilevamento automatico è in grado di rilevare soltanto un sottoinsieme di problemi e non garantisce l'accessibilità della tua app web, pertanto sono consigliati anche i [test manuali](https://web.dev/how-to-review/)."
   },
   "core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Questi elementi riguardano aree che uno strumento di test automatizzato non può coprire. Leggi ulteriori informazioni nella nostra guida su come [effettuare un esame di accessibilità](https://web.dev/articles/how-to-review)."
+    "message": "Questi elementi riguardano aree che uno strumento di test automatizzato non può coprire. Leggi ulteriori informazioni nella nostra guida su come [effettuare un esame di accessibilità](https://web.dev/how-to-review/)."
   },
   "core/config/default-config.js | a11yCategoryTitle": {
     "message": "Accessibilità"
@@ -1794,10 +1794,10 @@
     "message": "Prestazioni"
   },
   "core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Questi controlli consentono di convalidare gli aspetti di un'app web progressiva. [Scopri le caratteristiche di un'app web progressiva di qualità](https://web.dev/articles/pwa-checklist)."
+    "message": "Questi controlli consentono di convalidare gli aspetti di un'app web progressiva. [Scopri le caratteristiche di un'app web progressiva di qualità](https://web.dev/pwa-checklist/)."
   },
   "core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Questi controlli sono richiesti in base all'[Elenco di controllo PWA](https://web.dev/articles/pwa-checklist) di riferimento, ma non vengono eseguiti automaticamente da Lighthouse. Non incidono sul tuo punteggio, ma è importante verificarli manualmente."
+    "message": "Questi controlli sono richiesti in base all'[Elenco di controllo PWA](https://web.dev/pwa-checklist/) di riferimento, ma non vengono eseguiti automaticamente da Lighthouse. Non incidono sul tuo punteggio, ma è importante verificarli manualmente."
   },
   "core/config/default-config.js | pwaCategoryTitle": {
     "message": "PWA"
@@ -1809,7 +1809,7 @@
     "message": "Ottimizzato per PWA"
   },
   "core/config/default-config.js | seoCategoryDescription": {
-    "message": "Questi controlli assicurano che la pagina stia applicando il seguente consiglio relativo all'ottimizzazione per i motori di ricerca di base. Esistono molti altri fattori che Lighthouse non tratta qui che potrebbero influire sul tuo ranking di ricerca, incluse le prestazioni su [Segnali web essenziali](https://web.dev/explore/vitals). [Scopri di più su Google Search Essentials](https://support.google.com/webmasters/answer/35769)."
+    "message": "Questi controlli assicurano che la pagina stia applicando il seguente consiglio relativo all'ottimizzazione per i motori di ricerca di base. Esistono molti altri fattori che Lighthouse non tratta qui che potrebbero influire sul tuo ranking di ricerca, incluse le prestazioni su [Segnali web essenziali](https://web.dev/learn-core-web-vitals/). [Scopri di più su Google Search Essentials](https://support.google.com/webmasters/answer/35769)."
   },
   "core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Esegui questi altri strumenti di convalida sul tuo sito per controllare ulteriori best practice per SEO."
@@ -2817,13 +2817,13 @@
     "message": "Consulta la [documentazione relativa ad AMP](https://amp.dev/documentation/guides-and-tutorials/develop/style_and_layout/style_pages/) per verificare che tutti i tuoi stili siano supportati."
   },
   "node_modules/lighthouse-stack-packs/packs/amp.js | uses-responsive-images": {
-    "message": "Il componente [`amp-img`](https://amp.dev/documentation/components/amp-img/?format=websites) supporta l'attributo [`srcset`](https://web.dev/articles/use-srcset-to-automatically-choose-the-right-image), che consente di specificare quali asset immagine usare in base alle dimensioni dello schermo. [Ulteriori informazioni](https://amp.dev/documentation/guides-and-tutorials/develop/style_and_layout/art_direction/)"
+    "message": "Il componente [`amp-img`](https://amp.dev/documentation/components/amp-img/?format=websites) supporta l'attributo [`srcset`](https://web.dev/use-srcset-to-automatically-choose-the-right-image/), che consente di specificare quali asset immagine usare in base alle dimensioni dello schermo. [Ulteriori informazioni](https://amp.dev/documentation/guides-and-tutorials/develop/style_and_layout/art_direction/)"
   },
   "node_modules/lighthouse-stack-packs/packs/angular.js | dom-size": {
-    "message": "Potresti usare lo scorrimento virtuale con Component Dev Kit (CDK) se viene eseguito il rendering di elenchi di dimensioni molto grandi. [Ulteriori informazioni](https://web.dev/articles/virtualize-lists-with-angular-cdk)."
+    "message": "Potresti usare lo scorrimento virtuale con Component Dev Kit (CDK) se viene eseguito il rendering di elenchi di dimensioni molto grandi. [Ulteriori informazioni](https://web.dev/virtualize-lists-with-angular-cdk/)."
   },
   "node_modules/lighthouse-stack-packs/packs/angular.js | total-byte-weight": {
-    "message": "Applica la [suddivisione del codice a livello di route](https://web.dev/articles/route-level-code-splitting-in-angular) per ridurre al minimo le dimensioni dei bundle JavaScript. Potresti anche memorizzare anticipatamente nella cache gli asset usando il [service worker Angular](https://web.dev/articles/precaching-with-the-angular-service-worker)."
+    "message": "Applica la [suddivisione del codice a livello di route](https://web.dev/route-level-code-splitting-in-angular/) per ridurre al minimo le dimensioni dei bundle JavaScript. Potresti anche memorizzare anticipatamente nella cache gli asset usando il [service worker Angular](https://web.dev/precaching-with-the-angular-service-worker/)."
   },
   "node_modules/lighthouse-stack-packs/packs/angular.js | unminified-warning": {
     "message": "Se usi l'interfaccia a riga di comando Angular, assicurati che le build vengano generate in modalità di produzione. [Ulteriori informazioni](https://angular.io/guide/deployment#enable-runtime-production-mode)."
@@ -2832,7 +2832,7 @@
     "message": "Se usi l'interfaccia a riga di comando Angular, includi mappe di origine nella build di produzione per controllare i tuoi bundle. [Ulteriori informazioni](https://angular.io/guide/deployment#inspect-the-bundles)"
   },
   "node_modules/lighthouse-stack-packs/packs/angular.js | uses-rel-preload": {
-    "message": "Precarica in anticipo le route per velocizzare la navigazione. [Ulteriori informazioni](https://web.dev/articles/route-preloading-in-angular)."
+    "message": "Precarica in anticipo le route per velocizzare la navigazione. [Ulteriori informazioni](https://web.dev/route-preloading-in-angular/)."
   },
   "node_modules/lighthouse-stack-packs/packs/angular.js | uses-responsive-images": {
     "message": "Potresti usare l'utility `BreakpointObserver` di Component Dev Kit (CDK) per gestire i punti di interruzione delle immagini. [Ulteriori informazioni](https://material.angular.io/cdk/layout/overview)."
@@ -3003,7 +3003,7 @@
     "message": "Potresti cercare sul [Marketplace Magento](https://marketplace.magento.com/catalogsearch/result/?q=webp) una serie di estensioni di terze parti per utilizzare i formati di immagine più recenti."
   },
   "node_modules/lighthouse-stack-packs/packs/magento.js | offscreen-images": {
-    "message": "Potresti modificare i modelli del prodotto e del catalogo in modo da usare la funzionalità di [caricamento lento](https://web.dev/articles/native-lazy-loading) della piattaforma web."
+    "message": "Potresti modificare i modelli del prodotto e del catalogo in modo da usare la funzionalità di [caricamento lento](https://web.dev/native-lazy-loading) della piattaforma web."
   },
   "node_modules/lighthouse-stack-packs/packs/magento.js | server-response-time": {
     "message": "Usa l'[integrazione Varnish](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish.html) di Magento."
@@ -3123,7 +3123,7 @@
     "message": "Usa il componente `nuxt/image` e imposta il valore `sizes` appropriato. [Scopri di più](https://image.nuxtjs.org/components/nuxt-img#sizes)."
   },
   "node_modules/lighthouse-stack-packs/packs/octobercms.js | efficient-animated-content": {
-    "message": "[Sostituisci le GIF animate con i video](https://web.dev/articles/replace-gifs-with-videos) per caricamenti della pagina web più rapidi e valuta l'utilizzo di formati file moderni come [WebM](https://web.dev/articles/replace-gifs-with-videos#create_webm_videos) o [AV1](https://developers.google.com/web/updates/2018/09/chrome-70-media-updates#av1-decoder) per migliorare l'efficienza della compressione di oltre il 30% rispetto al codec video attualmente più avanzato, VP9."
+    "message": "[Sostituisci le GIF animate con i video](https://web.dev/replace-gifs-with-videos/) per caricamenti della pagina web più rapidi e valuta l'utilizzo di formati file moderni come [WebM](https://web.dev/replace-gifs-with-videos/#create-webm-videos) o [AV1](https://developers.google.com/web/updates/2018/09/chrome-70-media-updates#av1-decoder) per migliorare l'efficienza della compressione di oltre il 30% rispetto al codec video attualmente più avanzato, VP9."
   },
   "node_modules/lighthouse-stack-packs/packs/octobercms.js | modern-image-formats": {
     "message": "Valuta l'utilizzo di un [plug-in](https://octobercms.com/plugins?search=image) o di un servizio che converta automaticamente le immagini caricate nei formati ottimali. Le [immagini WebP senza perdita](https://developers.google.com/speed/webp) sono il 26% più piccole rispetto a quelle in formato PNG e il 25-34% più piccole rispetto alle immagini JPEG in base all'indice di qualità SSIM equivalente. Un altro formato dell'immagine innovativo da valutare è [AVIF](https://jakearchibald.com/2020/avif-has-landed/)."
@@ -3153,7 +3153,7 @@
     "message": "Valuta la revisione dei [plug-in](https://octobercms.com/plugins?search=javascript) che caricano JavaScript inutilizzati nella pagina web. Per identificare i plug-in che aggiungono JavaScript non necessari, esegui la [copertura del codice](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Strumenti per sviluppatori di Chrome. Individua il tema/plug-in responsabile nell'URL dello script. Cerca i plug-in che hanno diversi script con molto rosso nella copertura del codice. Un plug-in dovrebbe aggiungere uno script solo se viene effettivamente utilizzato nella pagina web."
   },
   "node_modules/lighthouse-stack-packs/packs/octobercms.js | uses-long-cache-ttl": {
-    "message": "Scopri come [impedire le richieste di rete non necessarie con la cache HTTP](https://web.dev/articles/http-cache#caching_checklist). Esistono numerosi [plug-in](https://octobercms.com/plugins?search=Caching) che si possono utilizzare per velocizzare la memorizzazione nella cache."
+    "message": "Scopri come [impedire le richieste di rete non necessarie con la cache HTTP](https://web.dev/http-cache/#caching-checklist). Esistono numerosi [plug-in](https://octobercms.com/plugins?search=Caching) che si possono utilizzare per velocizzare la memorizzazione nella cache."
   },
   "node_modules/lighthouse-stack-packs/packs/octobercms.js | uses-optimized-images": {
     "message": "Valuta l'utilizzo di un [plug-in per l'ottimizzazione delle immagini](https://octobercms.com/plugins?search=image) per comprimere le tue immagini preservandone la qualità."
@@ -3165,7 +3165,7 @@
     "message": "Attiva la compressione del testo nella configurazione del server web."
   },
   "node_modules/lighthouse-stack-packs/packs/react.js | dom-size": {
-    "message": "Valuta l'utilizzo di una libreria di \"windowing\" come `react-window` per ridurre al minimo il numero di nodi DOM creati se esegui il rendering di tanti elementi ripetuti nella pagina. [Scopri di più](https://web.dev/articles/virtualize-long-lists-react-window) Riduci al minimo anche le ripetizioni del rendering superflue usando [`shouldComponentUpdate`](https://reactjs.org/docs/optimizing-performance.html#shouldcomponentupdate-in-action), [`PureComponent`](https://reactjs.org/docs/react-api.html#reactpurecomponent) o [`React.memo`](https://reactjs.org/docs/react-api.html#reactmemo) e [salta gli effetti](https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects) soltanto fino alla modifica di determinate dipendenze se usi l'hook `Effect` per migliorare le prestazioni di runtime."
+    "message": "Valuta l'utilizzo di una libreria di \"windowing\" come `react-window` per ridurre al minimo il numero di nodi DOM creati se esegui il rendering di tanti elementi ripetuti nella pagina. [Scopri di più](https://web.dev/virtualize-long-lists-react-window/) Riduci al minimo anche le ripetizioni del rendering superflue usando [`shouldComponentUpdate`](https://reactjs.org/docs/optimizing-performance.html#shouldcomponentupdate-in-action), [`PureComponent`](https://reactjs.org/docs/react-api.html#reactpurecomponent) o [`React.memo`](https://reactjs.org/docs/react-api.html#reactmemo) e [salta gli effetti](https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects) soltanto fino alla modifica di determinate dipendenze se usi l'hook `Effect` per migliorare le prestazioni di runtime."
   },
   "node_modules/lighthouse-stack-packs/packs/react.js | redirects": {
     "message": "Se usi React Router, riduci al minimo l'utilizzo del componente `<Redirect>` per la [navigazione tra route](https://reacttraining.com/react-router/web/api/Redirect)."
@@ -3180,7 +3180,7 @@
     "message": "Se il tuo sistema di compilazione minimizza automaticamente i file JS, assicurati di eseguire il deployment della build di produzione della tua applicazione. Puoi verificare usando l'estensione React Developer Tools. [Ulteriori informazioni](https://reactjs.org/docs/optimizing-performance.html#use-the-production-build)"
   },
   "node_modules/lighthouse-stack-packs/packs/react.js | unused-javascript": {
-    "message": "Se non usi il rendering lato server, [suddividi i tuoi bundle JavaScript](https://web.dev/articles/code-splitting-suspense) con `React.lazy()`. In alternativa, suddividi il codice usando una libreria di terze parti come [loadable-components](https://www.smooth-code.com/open-source/loadable-components/docs/getting-started/)."
+    "message": "Se non usi il rendering lato server, [suddividi i tuoi bundle JavaScript](https://web.dev/code-splitting-suspense/) con `React.lazy()`. In alternativa, suddividi il codice usando una libreria di terze parti come [loadable-components](https://www.smooth-code.com/open-source/loadable-components/docs/getting-started/)."
   },
   "node_modules/lighthouse-stack-packs/packs/react.js | user-timings": {
     "message": "Usa lo strumento React DevTools Profiler, che usa l'API Profiler, per misurare le prestazioni di rendering dei tuoi componenti. [Ulteriori informazioni](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html)."
