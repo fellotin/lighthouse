@@ -691,7 +691,7 @@ In a future version of Lighthouse, this will be used to group the table items of
 
 The Back/forward cache (bfcache for short) is a browser optimization that serves pages from fully serialized snapshots when navigating back or forwards in session history. There are over 100 different reasons why a page may not be eligible for this optimization, so to assist developers Lighthouse now attempts to trigger a bfcache response and will list anything that prevented the browser from using the bfcache. [#14465](https://github.com/GoogleChrome/lighthouse/pull/14465)
 
-For more on bfcache, see [the web.dev article](https://web.dev/articles/bfcache).
+For more on bfcache, see [the web.dev article](https://web.dev/bfcache/).
 
 Note: This audit initially will not be available for PageSpeed Insights.
 
