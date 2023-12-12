@@ -68,7 +68,7 @@ class LongTasks extends Audit {
       title: str_(UIStrings.title),
       description: str_(UIStrings.description),
       requiredArtifacts: ['traces', 'devtoolsLogs', 'URL', 'GatherContext'],
-      guidanceLevel: 1,
+      guidanceLevel: 2,
     };
   }
 

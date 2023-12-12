@@ -55,7 +55,7 @@ class DOMSize extends Audit {
       failureTitle: str_(UIStrings.failureTitle),
       description: str_(UIStrings.description),
       scoreDisplayMode: Audit.SCORING_MODES.METRIC_SAVINGS,
-      guidanceLevel: 1,
+      guidanceLevel: 2,
       requiredArtifacts: ['DOMStats', 'URL', 'GatherContext'],
       __internalOptionalArtifacts: ['traces', 'devtoolsLogs'],
     };
