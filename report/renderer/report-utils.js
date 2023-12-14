@@ -476,6 +476,9 @@ const UIStrings = {
   openInANewTabTooltip: 'Open in a new tab',
   /** Generic category name for all resources that could not be attributed to a 1st or 3rd party entity. */
   unattributable: 'Unattributable',
+
+  /** Message communicating the removal of the PWA category. */
+  pwaRemovalMessage: 'heads up! PWA category will be removed :)',
 };
 
 export {
