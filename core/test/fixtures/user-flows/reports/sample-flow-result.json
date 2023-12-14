@@ -1946,7 +1946,7 @@
                 ]
               }
             },
-            "guidanceLevel": 2
+            "guidanceLevel": 1
           },
           "no-unload-listeners": {
             "id": "no-unload-listeners",
@@ -1969,7 +1969,7 @@
               "headings": [],
               "items": []
             },
-            "guidanceLevel": 3
+            "guidanceLevel": 2
           },
           "unsized-images": {
             "id": "unsized-images",
@@ -3519,7 +3519,7 @@
                 }
               ]
             },
-            "guidanceLevel": 2
+            "guidanceLevel": 1
           },
           "geolocation-on-start": {
             "id": "geolocation-on-start",
@@ -9971,7 +9971,7 @@
                 ]
               }
             },
-            "guidanceLevel": 2
+            "guidanceLevel": 1
           },
           "no-unload-listeners": {
             "id": "no-unload-listeners",
@@ -9994,7 +9994,7 @@
               "headings": [],
               "items": []
             },
-            "guidanceLevel": 3
+            "guidanceLevel": 2
           },
           "unsized-images": {
             "id": "unsized-images",
@@ -14851,7 +14851,7 @@
                 }
               ]
             },
-            "guidanceLevel": 2
+            "guidanceLevel": 1
           },
           "js-libraries": {
             "id": "js-libraries",
@@ -19730,7 +19730,7 @@
                 ]
               }
             },
-            "guidanceLevel": 2
+            "guidanceLevel": 1
           },
           "no-unload-listeners": {
             "id": "no-unload-listeners",
@@ -19753,7 +19753,7 @@
               "headings": [],
               "items": []
             },
-            "guidanceLevel": 3
+            "guidanceLevel": 2
           },
           "unsized-images": {
             "id": "unsized-images",
@@ -21429,7 +21429,7 @@
                 }
               ]
             },
-            "guidanceLevel": 2
+            "guidanceLevel": 1
           },
           "geolocation-on-start": {
             "id": "geolocation-on-start",
