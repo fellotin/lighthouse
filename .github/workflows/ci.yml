@@ -25,6 +25,7 @@ jobs:
         fetch-depth: 100
     - run: bash core/scripts/github-actions-commit-range.sh
       env:
+        CHROME_PATH: ${{ github.workspace }}/lighthouse/.tmp/chrome-tot/chrome
         GITHUB_CONTEXT_PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         GITHUB_CONTEXT_BASE_SHA: ${{ github.event.before }}
 
@@ -38,20 +39,15 @@ jobs:
     - run: yarn build-all
 
     # Run pptr tests using ToT Chrome instead of stable default.
-    - name: Define ToT chrome path
-      run: echo "CHROME_PATH=/home/runner/chrome-linux-tot/chrome" >> $GITHUB_ENV
     - name: Install Chrome ToT
-      working-directory: /home/runner
-      run: bash $GITHUB_WORKSPACE/core/scripts/download-chrome.sh && mv chrome-linux chrome-linux-tot
+      run: bash $GITHUB_WORKSPACE/core/scripts/download-chrome.sh
 
-    # Run tests that require headfull Chrome.
-    - run: sudo apt-get install xvfb
     - name: yarn test-clients
-      run: xvfb-run --auto-servernum bash $GITHUB_WORKSPACE/.github/scripts/test-retry.sh yarn test-clients
+      run: bash $GITHUB_WORKSPACE/.github/scripts/test-retry.sh yarn test-clients
     - name: yarn test-docs
-      run: xvfb-run --auto-servernum yarn test-docs
+      run: yarn test-docs
     - name: yarn test-treemap
-      run: xvfb-run --auto-servernum bash $GITHUB_WORKSPACE/.github/scripts/test-retry.sh yarn test-treemap
+      run: bash $GITHUB_WORKSPACE/.github/scripts/test-retry.sh yarn test-treemap
 
     - run: yarn diff:sample-json
     - run: yarn diff:flow-sample-json
