@@ -287,8 +287,8 @@ export class ReportRenderer {
 
     // additional warning banner.
     const pwaContainer = this._dom.createComponent('warningsToplevel');
-    const pwaMessage = this._dom.find('.lh-warnings__msg', pwaContainer);
-    pwaMessage.textContent = Globals.strings.pwaRemovalMessage;
+    const pwaMessageEl = this._dom.find('.lh-warnings__msg', pwaContainer);
+    pwaMessageEl.append(this._dom.convertMarkdownLinkSnippets(Globals.strings.pwaRemovalMessage));
 
     reportSection.append(pwaContainer);
     reportSection.append(this._renderReportWarnings(report));

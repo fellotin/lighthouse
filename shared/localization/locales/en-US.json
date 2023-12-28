@@ -3374,6 +3374,9 @@
   "report/renderer/report-utils.js | passedAuditsGroupTitle": {
     "message": "Passed audits"
   },
+  "report/renderer/report-utils.js | pwaRemovalMessage": {
+    "message": "Lighthouse will be deprecating the PWA category with Lighthouse version 12.0. More information about its deprecation [here](https://developer.chrome.com/blog/update-install-criteria?hl=en). For recommended PWA testing, refer to the documentation [here](https://developer.chrome.com/docs/devtools/progressive-web-apps/)."
+  },
   "report/renderer/report-utils.js | runtimeAnalysisWindow": {
     "message": "Initial page load"
   },
