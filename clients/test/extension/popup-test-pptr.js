@@ -38,7 +38,7 @@ describe('Lighthouse chrome popup', function() {
   before(async function() {
     // start puppeteer
     browser = await puppeteer.launch({
-      headless: false,
+      headless: 'new',
       executablePath: getChromePath(),
     });
 
@@ -106,6 +106,7 @@ describe('Lighthouse chrome popup', function() {
     const enabledCategoriesFromSettings = Object.keys(mockStorage[STORAGE_KEYS.Categories])
       .filter(key => mockStorage[STORAGE_KEYS.Categories][key]);
     const expectedEnabledValues = [
+      'psi',
       ...enabledCategoriesFromSettings,
       mockStorage[STORAGE_KEYS.Settings].device,
     ];
